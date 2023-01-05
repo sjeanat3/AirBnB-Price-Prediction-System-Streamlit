@@ -133,3 +133,5 @@ dmypy.json
 *.pickle
 **/*.pkl
 
+# Joblib
+*.joblib

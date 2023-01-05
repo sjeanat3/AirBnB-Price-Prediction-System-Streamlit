@@ -1,6 +1,6 @@
 # AirBnB-Price-Prediction-System
 
-![AirBnB](../Images/airbnb4.jpeg)
+![AirBnB](./Images/airbnb4.jpeg)
 
 ## Overview / Business Problem
 The target stakeholder is an AirBnB owner who owns property either in the cities of Asheville, Nashville, or Austin. AirBnB has provided a unique opportunity for homeowners to create a stream of income through their property. Prior experience with owning or renting real estate is not a requirement to list a home on AirBnb. As such, it is up to the discretion of the AirBnB lister to determine the daily price to charge. Listing a home for too high of a price could result in low demand and listing a price for too low could result in lost out potential income. The predictive modeling below will utilize a city’s past AirBnB listing data for the year of 2022. By utilizing this historical data, the model will predict prices for the 2023 calendar year based on attribute of the AirBnB owner’s home.
@@ -63,7 +63,7 @@ After performing the above EDA steps on each of the data sets, the data sets wer
  **Example AirBnB:**
 The below figure is a plot of a single Asheville AirBnB and 365 point of daily price data. As shown below, it is clear that there is a seasonal pattern related to price in Asheville with January through April trending between 90-110 dollars per night and between May and December trending between 115 - 120 dollars per night.
 
-![Sample AirBnB](../Images/Asheville_Sample_BnB.jpeg)
+![Sample AirBnB](./Images/Asheville_Sample_BnB.jpeg)
 
 ## Modeling
 The data set utilized for the below models is the combined, cleaned Calendar and Listings data sets. To efficiently predict the AirBnB’s price, we will utilize Neural Network models, Random Forest Regressor modes, and an XGBoost model.
