@@ -15,10 +15,12 @@ from geopy.distance import geodesic
 from datetime import timedelta, date
 
 
+with open('asheville_modeling_data.pkl', 'rb') as f:
+    asheville_modeling_data = pickle.load(f)
 
-streamlit_model3_results = joblib.load('streamlit_model3_results.joblib')
-
-
+# streamlit_model3_results = joblib.load('streamlit_model3_results.joblib')
+with open('streamlit_model3_results.pkl', 'rb') as f:
+    streamlit_model3_results = pickle.load(f)
 
 st.set_page_config(layout="wide")
 st.sidebar.header('Please Specify Your AirBnB Characteristics:')
@@ -53,7 +55,6 @@ checkin_date = st.sidebar.date_input('Check-In Date:', min_value = date.today(),
 checkout_date = st.sidebar.date_input('Check-Out Date:', min_value=(date.today()), 
                                       max_value = pd.to_datetime('12/31/2023'))
 st.title('Prediction of AirBnB Nightly Price')
-#st.image('..../Images/airbnb5.webp')
 def user_input_checkin_features():
     def yes_no_conversion(input):
         if input == 'Yes':
@@ -154,6 +155,7 @@ if st.button('Submit'):
     checkin_features = user_input_checkin_features()
     checkout_features = user_input_checkout_features()
     checkin_price = streamlit_model3_results.predict(checkin_features)
+    checkin_price = streamlit_model3_results.predict(checkin_features) 
     checkin_price = float(checkin_price)
     checkout_price = float(streamlit_model3_results.predict(checkout_features))
     average_price = (checkin_price + checkout_price) / 2
