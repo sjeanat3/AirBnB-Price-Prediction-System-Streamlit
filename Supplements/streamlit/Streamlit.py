@@ -15,11 +15,9 @@ from sklearn.compose import ColumnTransformer
 from geopy.distance import geodesic
 from datetime import timedelta, date
 
-# asheville_modeling_data = pd.read_pickle('../streamlit/asheville_modeling_data.pkl')
-# asheville_modeling_data = open('../Pickles/asheville_modeling_data.pickle', 'wb')
-with open('asheville_modeling_data.pkl', 'rb') as f:
-    asheville_modeling_data = pickle.load(f)
-# asheville_modeling_data = pickle.load(asheville_modeling_data)
+# with open('asheville_modeling_data.pkl', 'rb') as f:
+#     asheville_modeling_data = pickle.load(f)
+
 streamlit_model3_results = joblib.load('streamlit_model3_results.joblib')
 
 st.set_page_config(layout="wide")
