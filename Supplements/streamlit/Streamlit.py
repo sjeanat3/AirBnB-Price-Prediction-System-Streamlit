@@ -2,7 +2,8 @@ import pandas as pd
 import numpy as np
 import sklearn
 import streamlit as st
-import joblib
+# import joblib
+import pickle
 
 from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV, KFold
 from sklearn.ensemble import RandomForestRegressor
