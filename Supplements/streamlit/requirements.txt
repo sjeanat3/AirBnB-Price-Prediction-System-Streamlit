@@ -6,4 +6,3 @@ pickleshare==0.7.5
 joblib==1.2.0
 geopy==2.3.0
 pickle
-streamlit==1.16.0
