@@ -1,7 +1,6 @@
-streamlit
-numpy
-sklearn
-pickle
-joblib
-geopy.distance
-datetime
+streamlit==1.16.0
+numpy==1.23.2
+sklearn==0.0.post1
+pickleshare==0.7.5
+joblib==1.2.0
+geopy==2.3.0
