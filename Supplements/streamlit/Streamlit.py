@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import sklearn
-import pickle
 import streamlit as st
 import joblib
 
@@ -15,7 +14,7 @@ from sklearn.compose import ColumnTransformer
 from geopy.distance import geodesic
 from datetime import timedelta, date
 
-streamlit_model3_results = joblib.load('streamlit_model3_results.joblib')
+streamlit_model3_results = joblib.load('/Users/skyejeanat/Documents/Flatiron/Projects/Phase 5/AirBnB-Price-Prediction-System/Supplements/Joblib')
 
 st.set_page_config(layout="wide")
 st.sidebar.header('Please Specify Your AirBnB Characteristics:')
