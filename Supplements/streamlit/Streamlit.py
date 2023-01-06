@@ -15,15 +15,16 @@ from sklearn.compose import ColumnTransformer
 from geopy.distance import geodesic
 from datetime import timedelta, date
 
-asheville_modeling_data = pd.read_pickle('../Pickles/asheville_modeling_data.pickle')
+asheville_modeling_data = pd.read_pickle('../streamlit/asheville_modeling_data.pickle')
 # asheville_modeling_data = open('../Pickles/asheville_modeling_data.pickle', 'wb')
 # with open('../Pickles/asheville_modeling_data.pickle', 'rb') as f:
 # asheville_modeling_data = pickle.load(asheville_modeling_data)
 # asheville_modeling_data = pickle.load(asheville_modeling_data)
-streamlit_model3_results = joblib.load('../Joblib/streamlit_model3_results.joblib')
+streamlit_model3_results = joblib.load('../streamlit/streamlit_model3_results.joblib')
 
 st.set_page_config(layout="wide")
 st.sidebar.header('Please Specify Your AirBnB Characteristics:')
+st.image('../streamlit/airbnb5.webp', width = 600)
 
 yes_no_options = ['Yes', 'No']
 options = list(range(len(yes_no_options)))
