@@ -2,15 +2,7 @@ import pandas as pd
 import numpy as np
 import sklearn
 import streamlit as st
-# import joblib
 import pickle
-
-from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV, KFold
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.metrics import accuracy_score, mean_squared_error, mean_absolute_error, explained_variance_score
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
 
 from geopy.distance import geodesic
 from datetime import timedelta, date
