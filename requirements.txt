@@ -1,7 +1,3 @@
-pandas==1.5.2
-streamlit==1.16.0
-numpy==1.24.1
-scikit-learn==1.2.0
-pickleshare==0.7.5
-joblib==1.2.0
-geopy==2.3.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:769616b4e196e4ce41f352f324d269cc9ed854267d3acfccd9788c5bf3462e9a
+size 112
